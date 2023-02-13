@@ -1,91 +1,128 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import { IconIceCream2 } from "@tabler/icons-react";
+import { link } from "fs";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const skills = [
+  {
+    title: "Vannira",
+    description:
+      " I value simple content structure, clean design patterns, andthoughtful interactions.",
+    li: ["html", "css", "javascript", "typescript"],
+  },
+  {
+    title: "FW",
+    description:
+      " I value simple content structure, clean design patterns, andthoughtful interactions.",
+    li: ["react", "Next.js", "tailwindcss", "hydrogen", "Remix"],
+  },
+  {
+    title: "Tools",
+    description:
+      " I value simple content structure, clean design patterns, andthoughtful interactions.",
+    li: ["Git", "GitHub", "microCMS", "graphQL", "SEO", "figma", "shopify"],
+  },
+];
+
+export default async function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main className=" ">
+      <section className=" mx-auto grid max-w-screen-xl place-items-center gap-10 border px-3 py-20 ">
+        <h1 className="lead">Frontend Developer & CEO</h1>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+          A Frontend focused Web Developer building the Frontend of Websites and
+          Web Applications that leads to the success of the overall product
+          モダンなフロントエンド
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+        <img src="" alt="" />
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/undraw_programming_re_kg9v (1).svg"
+          width={800}
+          height={300}
+          alt="kazuyazama"
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+      {/* section間の幅 */}
+      <div className="grid gap-20">
+        <section
+          className=" relative h-[480px]  -scroll-mt-12 bg-gradient-to-r from-primary-sky to-primary-blue px-3 lg:px-20"
+          id="about"
         >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="mx-auto flex  max-w-screen-xl flex-col items-center  justify-center gap-5 py-20 text-white ">
+            <h1>私について</h1>
+            <p>
+              Since beginning my journey as a freelance designer over 11 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </p>
+          </div>
+          <article className="mx-auto max-w-screen-xl rounded-lg border  bg-white">
+            <div className=" grid grid-cols-3  justify-items-center  ">
+              {skills.map((skill) => (
+                <div className=" flex  flex-col items-center gap-5 py-10 px-5 text-center [&:not(:last-child)]:border-r">
+                  <div className=" rounded-full bg-primary-sky p-3">
+                    <IconIceCream2 />
+                  </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+                  <h2>{skill.title}</h2>
+                  <p>{skill.description}</p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+                  <ul>
+                    <li>{skill.li[0]}</li>
+                    <li>{skill.li[1]}</li>
+                    <li>{skill.li[2]}</li>
+                    {skill.li[3] && <li>{skill.li[3]}</li>}
+                    {skill.li[4] && <li>{skill.li[4]}</li>}
+                    {skill.li[5] && <li>{skill.li[5]}</li>}
+                    {skill.li[6] && <li>{skill.li[6]}</li>}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </article>
+        </section>
+
+        <section className=" mt-56 -scroll-mt-12 px-3 lg:px-20" id="about">
+          <div className="mx-auto flex max-w-screen-xl flex-col items-center  justify-center gap-5 py-20  ">
+            <h1>PROJECTS</h1>
+            <p>
+              Since beginning my journey as a freelance designer over 11 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </p>
+          </div>
+          <article className="mx-auto flex max-w-screen-xl items-center ">
+            <Image
+              src="/スクリーンショット_2023-02-13_23.02.36-removebg-preview.png"
+              alt=""
+              width={1000}
+              height={300}
+              className=" object-cover"
+              sizes="100vw"
+            />
+            <div>
+              <h2>Dopefolio</h2>
+              <p>
+                Dopefolio is a successful Open-Source project that I created
+                which have been featured on some of the biggest tech sites like
+                CSS-Tricks, Hostinger, etc & used by thousands of developers
+                globally
+              </p>
+              <button>visit site</button>
+            </div>
+          </article>
+        </section>
+        <section>a</section>
       </div>
     </main>
-  )
+  );
 }
