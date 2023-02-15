@@ -1,0 +1,23 @@
+import { IconBrandReact, IconTool } from "@tabler/icons-react";
+import { IconIceCream2 } from "@tabler/icons-react";
+
+export const skills = [
+  {
+    icon: IconIceCream2,
+    title: "Vannira",
+    description: "スタンダードな言語",
+    li: ["html", "css", "javascript", "typescript"],
+  },
+  {
+    icon: IconBrandReact,
+    title: "FW",
+    description: "開発効率とパフォーマンス向上",
+    li: ["React", "Next.js", "tailwindcss", "hydrogen", "Remix"],
+  },
+  {
+    icon: IconTool,
+    title: "Tools",
+    description: " 開発をより便利にする",
+    li: ["Git", "GitHub", "microCMS", "graphQL", "SEO", "figma", "shopify"],
+  },
+];
