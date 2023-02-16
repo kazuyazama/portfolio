@@ -1,8 +1,10 @@
 export const projects = [
     {
-      path: "https://hydrostore.vercel.app/",
+      path: "/",
+      // "https://hydrostore.vercel.app/",
       src: "/HydroStore.png",
-      title: "HydroStore",
+      title:"※改修中です",
+      //  "HydroStore",
       use: ["typescript", "NEXT.js13", "mantineUI", "tailwindcss"],
       descripttion:
         "HydroStoreは日本初のshopify FW「Hydrogen」に特化したECサイト制作代行サービスです。　",

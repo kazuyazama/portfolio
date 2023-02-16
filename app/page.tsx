@@ -9,7 +9,7 @@ import { projects } from "@/assets/projects";
 
 export default async function Home() {
   return (
-    <main className="  ">
+    <main className="">
       <section
         className=" mx-auto grid max-w-screen-xl place-items-center gap-10  overflow-x-hidden px-3 py-20 "
         id="top"
