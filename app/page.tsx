@@ -36,11 +36,14 @@ export default async function Home() {
         >
           <div className=" mx-auto flex  max-w-4xl flex-col items-center justify-center gap-10 py-20 text-white ">
             <TitleText>ABOUT</TitleText>
-            <p>
+            <p className=" ">
               こんにちは。私はwebサイトとwebアプリケーションを構築するフロントエンドエンジニアです。
-              エンジニア歴は2年です。新しい技術を学ぶことが好きで現在の開発では主にjavascript
+              エンジニア歴は2年です。
+              <br className="lg:hidden" />
+              新しい技術を学ぶことが好きで現在の開発では主にjavascript
               FWのReactとNEXT.jsを使用しています。
               過去に営業経験もございますので、お客様の要望を的確に汲み取り、実現することが得意です。
+              <br className="lg:hidden" />
               開発のご相談などございましたらお気軽にページ下のコンタクトフォームよりお問い合わせください。
             </p>
           </div>

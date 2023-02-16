@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -31,17 +32,20 @@ const Header = () => {
   return (
     <header className=" overflow-x-hidden">
       <section className="mx-auto grid max-w-screen-xl grid-flow-col items-center justify-between px-3 py-4 lg:py-6">
-        <div className=" flex items-center gap-3">
-          <Image
-            width={50}
-            height={50}
-            src="/avater.svg"
-            alt="Kazuya Zama"
-            className="inline-block h-8 w-8 overflow-hidden rounded-full bg-yellow-400 lg:h-12 lg:w-12  "
-          />
+        <Link href="/" className=" hover:text-primary-sky">
+          <div className=" flex items-center gap-3">
+            <Image
+              width={50}
+              height={50}
+              src="/avater.svg"
+              alt="Kazuya Zama"
+              sizes="32px"
+              className="inline-block h-8 w-8 overflow-hidden rounded-full bg-yellow-400 lg:h-12 lg:w-12 object-cover  "
+            />
 
-          <h2 className=" font-inter">Kazuya Zama</h2>
-        </div>
+            <h2 className=" font-inter">Kazuya Zama</h2>
+          </div>
+        </Link>
 
         {/* PC用nav */}
         <nav className="hidden lg:block">
