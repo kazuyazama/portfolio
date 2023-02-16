@@ -1,3 +1,6 @@
+import Gtag from "@/components/Gtag";
+import Script from "next/script";
+
 export default function Head() {
   const title = "Kazuya Zamaのポートフォリオ";
   const description =
