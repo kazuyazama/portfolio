@@ -104,7 +104,7 @@ export default async function Home() {
                   className=" basis-1/3 object-cover"
                   sizes="100vw"
                 />
-                <div className="flex flex-col items-center gap-5 lg:items-start lg:gap-3">
+                <div className=" flex flex-col items-center gap-5 lg:items-start lg:gap-3">
                   <h2>{item.title}</h2>
 
                   <ul className="flex gap-3">

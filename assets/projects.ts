@@ -1,11 +1,11 @@
 export const projects = [
   {
-    path: "https://hydrostore.vercel.app/",
-    src: "/HydroStore.png",
-    title: "HydroStore",
-    use: ["typescript", "NEXT.js13", "mantineUI", "tailwindcss"],
+    path: "https://hydrogen-app.restarts.workers.dev/",
+    src: "/Hydrogen.png",
+    title: "Hydrogen",
+    use: ["typescript", "Hydrogen", "tailwindcss"],
     descripttion:
-      "HydroStoreは日本初のshopify FW「Hydrogen」に特化したECサイト制作代行サービスです。　",
+      "shopifyフレームワーク、Hydrogenスターターテンプレートを使用したECデモサイトです。",
   },
   {
     path: "https://mansion-wifi.net/",
@@ -17,9 +17,16 @@ export const projects = [
   },
   {
     path: "https://biglobe-lp.pages.dev/",
-    src: "/ビッグローブ光LP.png",
+    src: "/ビッグローブ光.png",
     title: "ビッグローブ光LPサイト",
     use: ["typescript", "NEXT.js12", "tailwindcss"],
     descripttion: " ビッグローブ光正規代理店の公式LPサイトです。",
+  },
+  {
+    path: "https://ichibandori-machida.vercel.app/",
+    src: "/ichibandori.png",
+    title: "一番鶏 町田",
+    use: ["typescript", "NEXT.js12", "chakra UI"],
+    descripttion: "一番鶏 町田は静岡県で第３位に輝いた富士宮の名店焼き鳥屋の系列店です。",
   },
 ];
