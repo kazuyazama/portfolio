@@ -94,17 +94,19 @@ export default async function Home() {
             {projects.map((item) => (
               <article
                 key={item.path}
-                className="mx-auto flex max-w-screen-xl flex-col items-center gap-5 lg:flex-row "
+                className="mx-auto grid max-w-screen-xl items-center  gap-5 lg:grid-cols-2  "
               >
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  width={1000}
-                  height={300}
-                  className=" basis-1/3 object-cover"
-                  sizes="100vw"
-                />
-                <div className=" flex flex-col items-center gap-5 lg:items-start lg:gap-3">
+                <figure className="">
+                  <Image
+                    src={item.src}
+                    alt={item.title}
+                    width={1000}
+                    height={300}
+                    className=" object-cover"
+                    sizes="100vw"
+                  />
+                </figure>
+                <div className=" flex  flex-col items-center gap-5 lg:items-start lg:gap-3">
                   <h2>{item.title}</h2>
 
                   <ul className="flex gap-3">

@@ -1,7 +1,7 @@
 export const projects = [
   {
     path: "https://hydrogen-app.restarts.workers.dev/",
-    src: "/Hydrogen.png",
+    src: "/hydrogen.png",
     title: "Hydrogen",
     use: ["typescript", "Hydrogen", "tailwindcss"],
     descripttion:
