@@ -1,11 +1,11 @@
 export const projects = [
   {
-    path: "https://hydrogen-app.restarts.workers.dev/",
-    src: "/hydrogen.png",
-    title: "Hydrogen",
-    use: ["typescript", "Hydrogen", "tailwindcss"],
+    path: "https://line-clone-ten.vercel.app/",
+    src: "/line-clone.png",
+    title: "LINE-CLONE",
+    use: ["javascript", "React18", "tailwindcss","firebase9.0"],
     descripttion:
-      "shopifyフレームワーク、Hydrogenスターターテンプレートを使用したECデモサイトです。",
+      "リアルタイムチャットと認証機能を備えたシンプルなLINE-CLONEです(個人開発)",
   },
   {
     path: "https://mansion-wifi.net/",
@@ -16,11 +16,11 @@ export const projects = [
       "マンションwifiネットは建物導入済の回線を一覧で検索・比較・相談・お申し込みまで可能にした唯一のWEBサイトです。",
   },
   {
-    path: "https://biglobe-lp.pages.dev/",
-    src: "/ビッグローブ光.png",
-    title: "ビッグローブ光LPサイト",
-    use: ["typescript", "NEXT.js12", "tailwindcss"],
-    descripttion: " ビッグローブ光正規代理店の公式LPサイトです。",
+    path: "https://net-flix-clone-9d1e0.web.app/",
+    src: "/net-flix-clone.png",
+    title: "NETFLIX-clone",
+    use: ["javascript", "React18", "tailwindcss","firebase9.0"],
+    descripttion: "tmdb apiを使用し認証機能とお気に入り機能を備えたシンプルなNETFLIX-cloneです(個人開発)",
   },
   {
     path: "https://ichibandori-machida.vercel.app/",

@@ -6,18 +6,18 @@ export const skills = [
     icon: IconIceCream2,
     title: "Vannira",
     description: "スタンダードな言語",
-    li: ["html", "css", "javascript", "typescript"],
+    li: ["html", "css", "javascript", "typescript","Node.js"],
   },
   {
     icon: IconBrandReact,
     title: "FW",
     description: "開発効率とパフォーマンス向上",
-    li: ["React", "Next.js", "tailwindcss", "hydrogen", "Remix"],
+    li: ["React", "Next.js", "tailwindcss", "hydrogen", "Remix",],
   },
   {
     icon: IconTool,
     title: "Tools",
     description: " 開発をより便利にする",
-    li: ["Git", "GitHub", "microCMS", "graphQL", "SEO", "figma", "shopify"],
+    li: ["Git", "GitHub", "microCMS", "firebase", "SEO", "figma", "shopify"],
   },
 ];

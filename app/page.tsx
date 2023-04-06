@@ -38,7 +38,7 @@ export default async function Home() {
             <TitleText>ABOUT</TitleText>
             <p className=" ">
               こんにちは。私はwebサイトとwebアプリケーションを構築するフロントエンドエンジニアです。
-              エンジニア歴は2年です。
+              エンジニア歴は1年です。
               <br className="lg:hidden" />
               新しい技術を学ぶことが好きで現在の開発では主にjavascript
               FWのReactとNEXT.jsを使用しています。
