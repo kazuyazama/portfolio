@@ -1,6 +1,6 @@
 export const projects = [
   {
-    path: "https://line-clone-ten.vercel.app/",
+    path: "https://line-clone-phi.vercel.app/",
     src: "/line-clone.png",
     title: "LINE-CLONE",
     use: ["javascript", "React18", "tailwindcss","firebase9.0"],
