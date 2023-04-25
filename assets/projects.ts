@@ -29,4 +29,11 @@ export const projects = [
     use: ["typescript", "NEXT.js12", "chakra UI"],
     descripttion: "一番鶏 町田は静岡県で第３位に輝いた富士宮の名店焼き鳥屋の系列店です。",
   },
+  {
+    path: "https://www.cs-quarter.com/",
+    src: "/quarter.webp",
+    title: "カットスタジオQUARTER",
+    use: ["typescript", "NEXT.js13", "tailwindcss"],
+    descripttion: "QUARTERは35年以上続いているお子様からお年寄りまでお越しいただけるファミリーサロンです。",
+  },
 ];
