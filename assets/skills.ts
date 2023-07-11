@@ -12,12 +12,12 @@ export const skills = [
     icon: IconBrandReact,
     title: "FW",
     description: "開発効率とパフォーマンス向上",
-    li: ["React", "Next.js", "astro", "tailwindcss", "Chakraui", "hydrogen"],
+    li: ["React", "Next.js", "Astro", "Svelte", "Express"],
   },
   {
     icon: IconTool,
     title: "Tools",
     description: " 開発をより便利にする",
-    li: ["Git", "GitHub", "microCMS", "firebase", "prisma", "figma", "Shopify"],
+    li: ["Git,GitHub", "microCMS", "firebase", "prisma", "recoil", "trpc"],
   },
 ];
