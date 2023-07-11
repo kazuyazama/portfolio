@@ -4,7 +4,7 @@ import Script from "next/script";
 export default function Head() {
   const title = "Kazuya Zamaのポートフォリオ";
   const description =
-    "こんにちは。私はwebサイトとwebアプリケーションを構築するフロントエンドエンジニアです。エンジニア歴は2年です。新しい技術を学ぶことが好きで現在の開発では主にjavascript FWのReactとNEXT.jsを使用しています。";
+    "こんにちは。私はwebサイトとwebアプリケーションを構築するフロントエンドエンジニアです。エンジニア歴は2年です。新しい技術を学ぶことが好きで現在は主にtypescript + NEXT.jsでの開発をしています。";
   const favicon = "/KazuyaZama-favicon.svg";
   const image = "/ogpImage.png";
   const url = "https://kazuya-zama.vercel.app/";
